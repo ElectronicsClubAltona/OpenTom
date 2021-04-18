@@ -1,8 +1,7 @@
 # OpenTom
 
 **OpenTom** is a tiny, open source Linux distribution for TomTom™ devices.  
-*This repository was tested to be working on **March 2021**.*
-Forked and fixed up by micky-it
+*This repository was tested to be working in **April 2021**.*
 
 ## Getting started
 
@@ -10,8 +9,6 @@ Before proceeding, it is recommended to backup the original contents of your GPS
 
 - Register the i386 architecture by executing `sudo dpkg --add-architecture i386` (or the equivalent for your system)
 - Install the following dependencies: `autoconf chrpath fluid imagemagick libglib2.0-dev libtool subversion xsltproc gawk dh-autoreconf pkg-config libglib2.0-dev libc6:i386 libncurses5:i386 libstdc++6:i386 cmake`
-- <s>Set the `ROOT` envvar in `get_cross_env.sh` </s>
-  (Entered an auto root path. To have a different path edit get_cross_env.sh)
 - Enter the root terminal (`sudo su` in Ubuntu)
 - Execute `source get_cross_env.sh` or `./start-compiling.sh`
 - Run `make` to start the initial OpenTom build\*
@@ -108,4 +105,5 @@ Use an ext2 partion on your SDcard to replace (and free) initramfs with busybox 
 
 - Clément Gerardin (opentom@free.fr): project creator and supporter
 - Raúl Balanzá (contact@raulbalanza.me): project sources update and verification
-- Michele Martinelli (https://github.com/micky-it): project update and tested
+- Michele Martinelli (https://github.com/micky-it): project updates and tests
+- Micah Lindley (hi@micahlindley.com): minor fixes and maintenance 
